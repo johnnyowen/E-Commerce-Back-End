@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     }
   )
   .then(data => res.json(data))
-  .catch(errr => {
+  .catch(err => {
     console.log(err);
     res.status(500).json(err);
   })
